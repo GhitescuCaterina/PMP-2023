@@ -20,4 +20,14 @@ dictionary = {
 }
 df = pd.DataFrame(dictionary)
 
+# exercitiul 2
+timpAsteptareSub15min = df[(df['timp_asteptare'] + df['timp_pregatire'] <= 15)]
+size_sample = df.shape[0]
+procentajAsteptareSub15min = timpAsteptareSub15min.shape[0] / size_sample
+print("Procentajul timpului de asteptare sub 15 minute este:", procentajAsteptareSub15min)
 
+# exercitiul 3
+timpMediuAsteptare = df['timp_asteptare'].mean()
+print("Timpul mediu de asteptare pentru a fi servit al unui client este:", timpMediuAsteptare)
+
+az.plot_posterior({"Clienti pe ora": trace['T'], "Timp asteptare" : trace['P'], "Media pt comanda" : trace['preg']})
