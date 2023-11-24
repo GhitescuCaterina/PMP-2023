@@ -1,0 +1,1 @@
+am realizat acasa ca am uitat sa adaug screenshoturi, dar basically merg punctele 1.1, 1.3 si 2.1 cum trebuie. imi pare rau ca am uitat
